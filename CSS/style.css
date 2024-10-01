@@ -1,8 +1,19 @@
-html {
-    scroll-behavior: smooth;
-  }
 
- 
+header {
+  z-index:1337;
+  position: sticky;
+  top: 0;
+
+}
+
+ body {
+  background-color: wheat; 
+  font-family: 'Roboto', sans-serif;
+
+  margin: 0;
+  padding: 0;
+
+ }
 nav {
     background-color: #333;
     padding: 10px 0;
@@ -33,5 +44,9 @@ nav {
     background-color: #555; 
     color: wheat; 
     border-radius: 4px; 
+  }
+
+  nav i {
+    justify-content: left;
   }
   

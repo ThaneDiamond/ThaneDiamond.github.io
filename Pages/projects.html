@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<header>
+    <div id="header"></div> 
+</header>
+
+    <body>
+        <h1>PROJECTS!</h1> 
+        <section id="projects">
+            <div class="project">
+              <img src='/WebsiteSources/Images/DatabaseIcon2.png' alt="SimpleDatabaseApp">
+              <h3>Database Connectivity</h3>
+              <p>This project is just me connecting to a database and performing CRUD functions.</p>
+              <a href="https://github.com/ThaneDiamond/SimpleDataBase-app">View Project</a>
+            </div>
+          </section>  
+
+          <script>
+            fetch('/Elements/header.html')
+            .then(Response => Response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+        </script>
+    </body>
+
+</html>

@@ -5,33 +5,29 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-<i class="fab fa-github"></i> 
-<style>
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
-</style>
+<header>
+  <div id="header"></div> 
+</header>
 
 <body>
-<h1>Thane Diamond</h1>
-<p>WIP</p>
-<nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <!-- create pages for above links -->
-    </ul>
-  </nav>
-
-  <section id="projects">
-    <div class="project">
-      <img src='Images/DatabaseIcon.png' alt="SimpleDatabaseApp">
-      <h3>Database Connectivity</h3>
-      <p>This project is just me connecting to a database and performing CRUD functions.</p>
-      <a href="https://github.com/ThaneDiamond/SimpleDataBase-app">View Project</a>
-    </div>
-  </section>
   
+  
+
+
+  <h2>Website, CV and Projects</h2>
+  <p>WIP</p>
+
+  
+
+
+  
+  
+<script>
+    fetch('/Elements/header.html')
+    .then(Response => Response.text())
+    .then(data => {
+        document.getElementById('header').innerHTML = data;
+    });
+</script>
 </body>
 </html>
