@@ -9,7 +9,7 @@ function isInViewport(element) {
 }
 
 function revealOnScroll() {
-    const elements = document.querySelectorAll('.image-container.hidden');
+    const elements = document.querySelectorAll('.imageContainer.hidden');
     elements.forEach((element) => {
         if (isInViewport(element)) {
             element.classList.add('visible');
