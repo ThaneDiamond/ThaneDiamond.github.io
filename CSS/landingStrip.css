@@ -1,0 +1,36 @@
+.landingStrip {
+    height: 3456px;
+    
+    text-align: center;
+    position: relative;
+    color: white;
+    
+    background: url('/WebsiteSources/Images/MainBackground.jpg');
+
+  }
+  .landingStrip::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+.landingstripContent {
+
+  position: relative;
+  z-index: 2;
+  padding: 20px;  
+}
+
+.landingstripContent h1 {
+  font-size:xx-large; 
+}
+.landingstripContent p {
+  font-size: medium;
+}
+.landingstripContent h2 {
+  font-size: larger;
+}

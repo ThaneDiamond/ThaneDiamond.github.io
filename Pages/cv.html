@@ -10,12 +10,6 @@
     <body>
         <h1>CV!</h1>   
 
-        <script>
-            fetch('/Elements/header.html')
-            .then(Response => Response.text())
-            .then(data => {
-                document.getElementById('header').innerHTML = data;
-            });
-        </script>
+        <script src="/JavaScript/headerCall.js"></script>
     </body>
 </html>

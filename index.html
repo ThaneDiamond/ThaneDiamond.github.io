@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 
 <html>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/imageSection.css">
+    <link rel="stylesheet" href="/CSS/landingStrip.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -10,25 +12,92 @@
 </header>
 
 <body>
-  <img src="/WebsiteSources/Images/MainBackground.jpg" alt="Main Background">
   
   
+  <section class="landingStrip">
+    <div class="landingstripContent"> 
+      <h1>Thane Diamond</h1>
+      <h2>Who Am I?</h2>     
+        <p>I'm a 22-year-old from Pretoria, currently finishing my diploma in IT — hopefully with your support.</p>
 
+        <p>I built this website to showcase my CV and projects in one convenient place. Consider it a hub where you can find everything about me and what I’ve worked on.</p>
 
-  <h2>Website, CV and Projects</h2>
-  <p>WIP</p>
+        <h2>What Have I Been Working On?</h2>
+        <p>Recently, I've been developing a small app that connects to a database and allows CRUD operations. I've also explored various languages and worked on projects, some of which are still works in progress.</p>
 
+        <h3>Feel free ot navigate to the other portals with the Nav bar up above</h3>
+        <p>Or scroll to see some of my favourite things ^^</p>
+    </div>
+    
+    <section class="image-section">
+      <div class="image-row">
+
+          <div class="image-container hidden">
+              <img src='/WebsiteSources/Images/Almonds.jpg' alt="Project 1" loading="lazy">             
+          </div>
+
+          <div class="text-container">
+            <p>Almonds are just amazing. Some people even milk them.</p>
+          </div>
+
+          <div class="image-container hidden">
+              <img src='/WebsiteSources/Images/Olives.jpg' alt="Project 2" loading="lazy">
+          </div>
+
+          <div class="text-container">
+            <p>Olives are my favourite fruit. Toss them in a salad, throw them on a pizza, put them in your drink. Possibilities are endless.</p>
+          </div>
+            
+      </div>
   
+      <div class="image-row">
 
+          <div class="image-container hidden">
+              <img src='/WebsiteSources/Images/PSUharness.jpg' alt="Project 3" loading="lazy">
+          </div>
 
-  
-  
-<script>
-    fetch('/Elements/header.html')
-    .then(Response => Response.text())
-    .then(data => {
-        document.getElementById('header').innerHTML = data;
-    });
-</script>
+          <div class="text-container">
+            <p>Technology is just cool. Everyday something new comes out or is developed, trying to keep up with it is a monumental task on its own.</p>
+          </div>
+            
+          
+         <div class="image-container hidden">
+              <img src='/WebsiteSources/Images/Oreo.jpg' alt="Project 4" loading="lazy">             
+          </div>
+
+          <div class="text-container">
+             <p>My cat Oreo yawning.</p>
+          </div>
+           
+      </div>
+
+      <div class="image-row">
+
+        <div class="image-container hidden">
+            <img src='/WebsiteSources/Images/keyboard.jpg' alt="Project 3" loading="lazy">
+        </div>
+
+        <div class="text-container">
+          <p>I am an avid gamer. I play everything from shooters to Moba. Games like Dota 2, Satisfactory, Hunt Showdown, Stardew Valley, Escape From Tarkov and Frostpunk just to name a few</p>
+        </div>
+          
+        
+       <div class="image-container hidden">
+            <img src='/WebsiteSources/Images/insects.jpg' alt="Project 4" loading="lazy">             
+        </div>
+
+        <div class="text-container">
+           <p>Insects are just badass.</p>
+        </div>
+         
+    </div>
+    
+  </section>
+    
+  </section>
+
+  <script src="/JavaScript/headerCall.js"></script>
+  <script src="/JavaScript/containerAnimation.js"></script>
+ 
 </body>
 </html>
