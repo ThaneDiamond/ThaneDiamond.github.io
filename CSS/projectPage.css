@@ -1,0 +1,36 @@
+.projectPage {
+    height: 1200px;
+    
+    text-align: center;
+    position: relative;
+    color: white;
+    
+    background: url('/WebsiteSources/Images/projectBackground.jpg');
+
+  }
+  .projectPage::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); 
+    z-index: 1;
+}
+.projectPageContent {
+
+  position: relative;
+  z-index: 2;
+  padding: 20px;  
+}
+
+.projectPageContent h1 {
+  font-size:xx-large; 
+}
+.projectPageContent p {
+  font-size: medium;
+}
+.projectPageContent h2 {
+  font-size: larger;
+}
